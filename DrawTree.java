@@ -26,6 +26,7 @@ public class DrawTree extends Canvas {
         int startLocX = (int)locX;
         int startLocY = (int)locY;
         
+        // Create end points of each branch
         double endLocXb1 = locX - size - shift;
         double endLocYb1 = locY - size + shift;
         double endLocXb2 = locX + size + shift;
@@ -36,6 +37,7 @@ public class DrawTree extends Canvas {
         int endLocXb2Int = (int)endLocXb2;
         int endLocYb2Int = (int)endLocYb2;
         
+        // Draw initial two branches
         g.drawLine(startLocX, startLocY, endLocXb1Int, endLocYb1Int);
         g.drawLine(startLocX, startLocY, endLocXb2Int, endLocYb2Int);
           
